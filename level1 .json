@@ -1,0 +1,359 @@
+{
+"intents": [
+					{
+						"tag": "l1py1",
+						"patterns": ["python"],
+						"responses":["Is Python case sensitive when dealing with identifiers?"],
+						"options":["yes","no","machine dependent","none of the mentioned"],
+						"right_key":"case sensitive",
+						"wrong_key":"reserved",
+						"answer":"yes",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py2",
+						"patterns": ["case sensitive"],
+						"responses":["Select the reserved keyword in python?"],
+						"options":["else","import","raise","All of these"],
+						"right_key":"reserved",
+						"wrong_key":"reserved",
+						"answer":"All of these",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py3",
+						"patterns": ["reserved"],
+						"responses":["Which of the following symbols are used for comments in Python?"],
+						"options":["//","*/","/**/","#"],
+						"right_key":"comments",
+						"wrong_key":"keyword",
+						"answer":"#",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py4",
+						"patterns": ["comments"],
+						"responses":["What is the maximum possible length of an identifier?"],
+						"options":["31 characters","63 characters","79 characters","none of the mentioned"],
+						"right_key":"keyword",
+						"wrong_key":"keyword",
+						"answer":"none of the mentioned",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py5",
+						"patterns": ["keyword"],
+						"responses":["Which of the following is not a keyword?"],
+						"options":["eval","assert","nonlocal","pass"],
+						"right_key":"used to define",
+						"wrong_key":"used to define",
+						"answer":"eval",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py6",
+						"patterns": ["used to define"],
+						"responses":["Which keyword is used to define methods in Python?"],
+						"options":["function","def","method","All of these"],
+						"right_key":"core data",
+						"wrong_key":"precedence",
+						"answer":"def",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py7",
+						"patterns": ["core data"],
+						"responses":["Which of these in not a core data type?"],
+						"options":["Lists","Dictionary","Tuples","Class"],
+						"right_key":"precedence",
+						"wrong_key":"precedence",
+						"answer":"Class",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py8",
+						"patterns": ["precedence"],
+						"responses":["Which of the following has more precedence?"],
+						"options":["+","-","()","/"],
+						"right_key":"executed in shell",
+						"wrong_key":"key and value",
+						"answer":"()",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+
+					{
+						"tag": "l1py9",
+						"patterns": ["executed in shell"],
+						"responses":["Given a function that does not return any value, What value is thrown by default when executed in shell."],
+						"options":["int","bool","void","None"],
+						"right_key":"key and value",
+						"wrong_key":"arithmetic operators",
+						"answer":"None",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py10",
+						"patterns": ["key and value"],
+						"responses":["In order to store values in terms of key and value we use what core data type."],
+						"options":["list","tuple","class","dictionary"],
+						"right_key":"arithmetic operators",
+						"wrong_key":"arithmetic operators",
+						"answer":"dictionary",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py11",
+						"patterns": ["arithmetic operators"],
+						"responses":["What arithmetic operators cannot be used with strings?"],
+						"options":["+","*","-","All of the mentioned"],
+						"right_key":"listExample",
+						"wrong_key":"listExample",
+						"answer":"-",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py12",
+						"patterns": ["listExample"],
+						"responses":["Suppose listExample is [‘h’,’e’,’l’,’l’,’o’], what is len(listExample)?"],
+						"options":["5","4","None","Error"],
+						"right_key":"sum(list1)",
+						"wrong_key":"sum(list1)",
+						"answer":"5",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py13",
+						"patterns": ["sum(list1)"],
+						"responses":["Suppose list1 is [1, 5, 9], what is sum(list1)?"],
+						"options":["1","9","15","error"],
+						"right_key":"Suppose list1",
+						"wrong_key":"Suppose list1",
+						"answer":"15",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l1py14",
+						"patterns": ["Suppose list1"],
+						"responses":["Suppose list1 is [2, 33, 222, 14, 25], What is list1[-1]?"],
+						"options":["Error","None","25","2"],
+						"right_key":"level2",
+						"wrong_key":"level2",
+						"answer":"25",
+						"right_reward":3,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l2py1",
+						"patterns": ["level2"],
+						"responses":["What is the value of this expression?\n2**2**3**1"],
+						"options":["12","64","128","256"],
+						"right_key":"fileopen",
+						"wrong_key":"fileopen",
+						"answer":"256",
+						"right_reward":4,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l2py2",
+						"patterns": ["fileopen"],
+						"responses":["How will you open a file for reading mode as a text file"],
+						"options":["open('file.txt', 'r')","open('file.txt',’w’)","open('file.txt,b')","none of the above"],
+						"right_key":"lslice",
+						"wrong_key":"lslice",
+						"answer":"open('file.txt', 'r')",
+						"right_reward":4,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l2py3",
+						"patterns": ["lslice"],
+						"responses":["Python allows string slicing. What is the output of the code: s='cppbuzz chicago' print(s[3:5])?"],
+						"options":["bu","buzzc","pbuzz","none of the above"],
+						"right_key":"fnins",
+						"wrong_key":"fnins",
+						"answer":"bu",
+						"right_reward":4,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l2py4",
+						"patterns": ["fnins"],
+						"responses":["What is called when a function is defined inside a class?"],
+						"options":["class,","function","method","module"],
+						"right_key":"fn2",
+						"wrong_key":"corrstmt",
+						"answer":"method",
+						"right_reward":4,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l2py5",
+						"patterns": ["fn2"],
+						"responses":["Which of the following function headers is correct?"],
+						"options":["def fun(a = 2, b = 3, c)","def fun(a = 2, b, c = 3)","def fun(a, b = 2, c = 3)"],
+						"right_key":"corrstmt",
+						"wrong_key":"corrstmt",
+						"answer":"def fun(a, b = 2, c = 3)",
+						"right_reward":4,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l2py6",
+						"patterns": ["corrstmt"],
+						"responses":["Which one of the following is a valid Python if statement :"],
+						"options":["if a>=2 :","if (a >= 2)"," if (a => 22)","if a >= 22"],
+						"right_key":"control_structure",
+						"wrong_key":"control_structure",
+						"answer":"if a>=2 :",
+						"right_reward":4,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l2py7",
+						"patterns": ["control_structure"],
+						"responses":["In a Python program, a control structure:"],
+						"options":["Defines program-specific data structures","Directs the order of execution of the statements in the program","none of the above"],
+						"right_key":"poly",
+						"wrong_key":"poly",
+						"answer":"Directs the order of execution of the statements in the program",
+						"right_reward":4,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l2py8",
+						"patterns": ["poly"],
+						"responses":["Polymorphism is when a subclass can modify the behavior of its superclass"],
+						"options":["True","False","depends on the functions"],
+						"right_key":"code1",
+						"wrong_key":"argu",
+						"answer":"Directs the order of execution of the statements in the program",
+						"right_reward":4,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l2py9",
+						"patterns": ["code1"],
+						"responses":["What will be the output of given Python code?\n str1='hello'\nc=0\nfor x in str1:\nif(x!='l'):\nc=c+1\nelse:\npass\nprint(c)\n"],
+						"options":["2","0","4","3"],
+						"right_key":"argu",
+						"wrong_key":"argu",
+						"answer":"3",
+						"right_reward":4,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l2py10",
+						"patterns": ["argu"],
+						"responses":["Which of the following is the property of variable argument count?"],
+						 "options":["More than one argument can be used while calling the function.","It should be always last while declaring the arguments.","Both A and B","none of these"],
+						"right_key":"level3",
+						"wrong_key":"level3",
+						"answer":"Both A and B ",
+						"right_reward":4,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l3py1",
+						"patterns": ["level3"],
+						"responses":["what is the difference between .py and .pyc files?"],
+						"options":[".py files are python python source files",".pyc files are compiled bytecode files","Both A and B","None of the above"],
+						"right_key":"python files",
+						"wrong_key":"python files",
+						"answer":"Both A and B",
+						"right_reward":5,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l3py2",
+						"patterns": ["python files"],
+						"responses":["What is namespace in python"],
+						"options":["it's a function","it is the place where resides can be found","it is the constructor"],
+						"right_key":"namespace",
+						"wrong_key":"namespace",
+						"answer":"it is the place where resides can be found",
+						"right_reward":5,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l3py3",
+						"patterns": ["namespace"],
+						"responses":["What is the output of the following programme? \nl1=[ ]l1.append([1,[2,3],4])\nl1.extend([7,8,9])\nprint(l1[0][1][1]+l1[2])" ],
+						"options":[" Type Error","12","11","38"],
+						"right_key":"pylistout",
+						"wrong_key":"pydictout",
+						"answer":"11",
+						"right_reward":5,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l3py4",
+						"patterns": ["pylistout"],
+						"responses":["What is the output of the following programme?\nD=dict()\nFor x in enumerate(range(2)\nD[x[0]]=x[1]\nD[x[1]+7]=x[0]\nprint(D)" ],
+						"options":[" Key Error","{0:1,7:0,1:1,8:0}","{0:0,7:0,1:1,8:1}","{1:1,7:2,0:1,8:1}"],
+						"right_key":"pydictout",
+						"wrong_key":"pydictout",
+						"answer":"{1:1,7:2,0:1,8:1}",
+						"right_reward":5,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l3py5",
+						"patterns": ["pydictout"],
+						"responses":["What is the output of the following programme\nfrom math import *\na=2.13\nb=3.7777\nc=-3.12\nprint(int(a),floor(b),ceil(c),fabs(c))"],
+						"options":["2 3 -4 3","2 3 -3 3.12","2 4 -3 3","2 3 -4 3.12 "],
+						"right_key":"pyexception",
+						"wrong_key":"pyexception",
+						"answer":"2 3 -3 3.12",
+						"right_reward":5,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l3py7",
+						"patterns": ["pyexception"],
+						"responses":[" What will be the output of the following program\ntuple = (1, 2, 3, 4)\ntuple.append( (5, 6, 7) )\nprint(len(my_tuple)) "],
+						"options":["1","2","5","Error"],
+						"right_key":"pytuples",
+						"wrong_key":"pythreads",
+						"answer":"Error",
+						"right_reward":5,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l3py8",
+						"patterns": ["pytuples"],
+						"responses":["What is the output of the following program?\nstr1 = '{2}, {1} and {0}'.format('a', 'b', 'c')\n\nstr2 = '{0}{1}{0}'.format('abra', 'cad')\nprint(str1, str2) "],
+						"options":["c, b and a abracad0","a, b and c abracadabra","a, b and c abracadcad","c, b and a abracadabra"],
+						"right_key":"pythreads",
+						"wrong_key":"pythreads",
+						"answer":"c, b and a abracadabra",
+						"right_reward":5,
+						"wrong_reward":1
+					},
+					{
+						"tag": "l3py10",
+						"patterns": ["pythreads"],
+						"responses":["What is the output of the code shown below?\nsets = {1, 2, 3, 4, 4}\nprint(sets)"],
+						"options":["{1, 2, 3}","{1, 2, 3, 4}","{1, 2, 3, 4, 4}","Error"],
+						"right_key":"bye",
+						"wrong_key":"bye",
+						"answer":"{1, 2, 3, 4}",
+						"right_reward":5,
+						"wrong_reward":1
+					}
+				]
+}
+
+
